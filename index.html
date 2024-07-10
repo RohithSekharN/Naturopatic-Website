@@ -4,70 +4,230 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Naturopathic Clinic</title>
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- CSS -->
-     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
 </head>
 <body>
-    <header class="container_fluid bg-dark">
-        <div class="nav">
-            <img class="ms-4" id="nav_logo" src="https://static1.squarespace.com/static/6291604274bc7d0c02445423/t/629169cb9aa74d6fd5a0e29b/1681933147117/" alt="logo">
-
-            <ul class="nav" type="none" id="nav_list">
-                <li>
-                    <a id="nav_link" href="#home">Home</a>
-                </li>
-                <li>
-                    <a id="nav_link" href="#treatments">Treatments</a>
-                </li>
-                <li>
-                    <a id="nav_link" href="#testing">Testing</a>
-                </li>
-                <li>
-                    <a id="nav_link" href="#know">Get to Know Us</a>
-                </li>
-                <li>
-                    <a id="nav_link" href="#contact">Contact Us</a>
-                </li>
-                <li>
-                    <button id="header_btn">BOOK NOW</button>
-                </li>
-            </ul>
-            
-
-        </div>
-    </header>
-
-    <main>
-        <div class="container_fluid" id="banner">
-            <h1>Welcome to Vancouver <br>Naturopathic Clinic</h1>
-            <p>Your holistic health partner for over 30 years</p>
-            <button>BOOK NOW</button>
-        </div>
-
-        <div class="container text-center">
-            <div class="row align-items-start">
-              <div class="col">
-                <p>OUR APPROACH</p>
-              </div>
-              <div class="col">
-                <p>PRINCIPLES OF NATUROPATHIC MEDICINE</p>
-              </div>
-              <div class="col">
-                One of three columns
-              </div>
-              <div class="col">
-                One of three columns
-              </div>
-              <div class="col">
-                One of three columns
-              </div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <img id="logo" src="https://images.squarespace-cdn.com/content/v1/6291604274bc7d0c02445423/06b132cf-b3fb-45f3-a36e-e72cf92fa21c/vnc-primary-horizontal-logo-full-color-rgb-1000px%40144ppi.png?format=1500w" alt="logo">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Treatments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Get in Touch</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-success" href="#">Book Now</a>
+                    </li>
+                </ul>
             </div>
-          </div>
-    </main>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero d-flex align-items-center">
+        <div class="container text-center">
+            <h1>Welcome to Vancouver Naturopathic Clinic</h1>
+            <p>Your holistic health partner for over 30 years</p>
+            <a href="#" class="btn btn-success">Book Now</a>
+        </div>
+    </section>
+
+    <!-- Icons Section -->
+    <section class="icons py-5">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <img src="https://images.squarespace-cdn.com/content/v1/6291604274bc7d0c02445423/1655423885493-ILCGMF9ST25TS68FFC16/Our+Approach.png?format=300w" alt="Icon 1" class="img-fluid">
+                    <p>Our Approach</p>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <img src="https://images.squarespace-cdn.com/content/v1/6291604274bc7d0c02445423/1655423916624-MQXWMZ1TKVTUKJMS5U4L/Principles+of+Naturopathic+Medicine.png?format=300w" alt="Icon 2" class="img-fluid">
+                    <p>Principles of Naturopathic Medicine</p>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <img src="https://images.squarespace-cdn.com/content/v1/6291604274bc7d0c02445423/1655423948240-NFCQ54F93YUT93O0DYKN/Health+Programs.png?format=300w" alt="Icon 3" class="img-fluid">
+                    <p>Health Conditions</p>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <img src="https://images.squarespace-cdn.com/content/v1/6291604274bc7d0c02445423/1655423963367-XDNUPNZFK2SMV3L3818P/Your+First+Visit.png?format=300w" alt="Icon 4" class="img-fluid">
+                    <p>Your First Visit</p>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <img src="https://images.squarespace-cdn.com/content/v1/6291604274bc7d0c02445423/1655423978832-HB9P8L7NNQ7GI14WZV7E/Our+Team.png?format=300w" alt="Icon 5" class="img-fluid">
+                    <p>Our Team</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Sections -->
+    <section class="content-section py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="https://images.squarespace-cdn.com/content/v1/6291604274bc7d0c02445423/e793bafd-9d49-4283-8963-48df564cdd50/Vancouver-Naturopathic-Clinic-Clinic-Owners.jpg?format=1500w" class="img-fluid" alt="Healing Vancouver">
+                </div>
+                <div class="col-md-6 d-flex align-items-center">
+                    <div>
+                        <h2>Healing Vancouver for over 30 years</h2>
+                        <p>As the largest leading Naturopathic Clinic in Vancouver, our mission is to provide holistic healthcare solutions that promote the natural healing power of the body. Our experienced team offers personalized treatments to meet your unique needs.</p>
+                        <a href="#" class="btn btn-success">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 d-flex align-items-center">
+                    <div>
+                        <h2>A balanced approach to individualized healthcare</h2>
+                        <p>We blend traditional medicine with the most advanced clinical practices to offer comprehensive care. Our team of practitioners works closely with you to develop a personalized treatment plan that addresses your health concerns and enhances your well-being.</p>
+                        <a href="#" class="btn btn-success">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://images.squarespace-cdn.com/content/v1/6291604274bc7d0c02445423/ba711883-c748-4743-a156-466d1f35d7f1/Vancouver-Naturopathic-Clinic-Reception-Desk-Two-Women.jpg?format=1500w" class="img-fluid" alt="Balanced Approach">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="https://images.squarespace-cdn.com/content/v1/6291604274bc7d0c02445423/a7b4d0b0-cb97-4dad-80d3-6872b4bcd298/Vancouver-Naturopathic-Clinic-Hands-Creating-Tincture.jpg?format=1500w" class="img-fluid" alt="Staying true to our roots">
+                </div>
+                <div class="col-md-6 d-flex align-items-center">
+                    <div>
+                        <h2>Staying true to our roots</h2>
+                        <p>We adhere to the core principles of Naturopathy that promote the body's inherent ability to heal. Our team stays updated with the latest advancements in naturopathic medicine to ensure you receive the best possible care.</p>
+                        <a href="#" class="btn btn-success">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Articles Section -->
+    <section class="latest-articles py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Latest Articles</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <img width="100%" src="https://images.squarespace-cdn.com/content/v1/6291604274bc7d0c02445423/1666322511916-NMPXGDBFY42JGFWFCY06/Kate-Paterson-Creative-Branding-Portrait-photography-Vancouver-VNC-BC-13.jpg?format=750w" class="img-fluid mb-3" alt="Article 1">
+                    <h3>What is Naturopathic Medicine?</h3>
+                    <p>Read More <i class="fa-solid fa-arrow-right"></i></p>
+                </div>
+                <div class="col-md-4">
+                    <img width="100%" src="https://images.squarespace-cdn.com/content/v1/6291604274bc7d0c02445423/1666322618787-4VHIGHOTC8MQW8YQZYNV/Kate-Paterson-Creative-Branding-Portrait-photography-Vancouver-VNC-BC-51.jpg?format=500w" class="img-fluid mb-3" alt="Article 2">
+                    <h3>Heavy Metal Toxicity</h3>
+                    <p>Read More <i class="fa-solid fa-arrow-right"></i></p>
+                </div>
+                <div class="col-md-4">
+                    <img width="100%" src="https://images.squarespace-cdn.com/content/v1/6291604274bc7d0c02445423/1666322733021-N5KI2MYBGMFXFOZIVVO1/Kate-Paterson-Creative-Branding-Portrait-photography-Vancouver-VNC-BC-46.jpg?format=500w" class="img-fluid mb-3" alt="Article 3">
+                    <h3>Perpetuating Factors of Disease</h3>
+                    <p>Read More <i class="fa-solid fa-arrow-right"></i></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center bg-body-tertiary">
+      <!-- Grid container -->
+      <div class="container pt-4">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a
+            data-mdb-ripple-init
+            class="btn btn-link btn-floating btn-lg text-body m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+    
+          <!-- Twitter -->
+          <a
+            data-mdb-ripple-init
+            class="btn btn-link btn-floating btn-lg text-body m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-twitter"></i
+          ></a>
+    
+          <!-- Google -->
+          <a
+            data-mdb-ripple-init
+            class="btn btn-link btn-floating btn-lg text-body m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-google"></i
+          ></a>
+    
+          <!-- Instagram -->
+          <a
+            data-mdb-ripple-init
+            class="btn btn-link btn-floating btn-lg text-body m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-instagram"></i
+          ></a>
+    
+          <!-- Linkedin -->
+          <a
+            data-mdb-ripple-init
+            class="btn btn-link btn-floating btn-lg text-body m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <!-- Github -->
+          <a
+            data-mdb-ripple-init
+            class="btn btn-link btn-floating btn-lg text-body m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-github"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+    
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2020 Copyright:
+        <a class="text-body" href="https://mdbootstrap.com/">Naturopathicclinic.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
 </body>
 </html>

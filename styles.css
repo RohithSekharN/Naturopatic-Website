@@ -1,34 +1,55 @@
-#nav_logo{
+body {
+    font-family: Arial, sans-serif;
+}
+
+#logo{
+    width: 200px;
     height: 100px;
-    width: 220px;
-    padding: 10px;
 }
 
-#nav_link{
-    text-decoration: none;
-    margin-left: 20px;
-}
-
-#nav_list{
-    margin-top: 20px;
-    justify-content: end;
-}
-
-#header_btn{
-    border-radius: 0;
-    padding: 0px;
-    margin-left: 50px;
-    margin-top: 5px;
-    background-color: #8F9F87;
-}
-
-.header{
-    display: flex;
-}
-
-#banner{
-    width: 100%;
-    height: 500px;
-    background-image: url(https://media.istockphoto.com/id/531475568/photo/patient-and-medical-staff.jpg?s=612x612&w=0&k=20&c=KqciFJ4FCJMwY04Ucjx1ZJe_316jM65GAUlmbTmGzBk=);
+.hero {
+    background: url('https://www.verywellhealth.com/thmb/j0vxuHC9mNjAd-dImQQzZ1fJtoE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/VWH-GettyImages-900220552-df2ce9de189b42b08660a9c86f33ac15.jpg') no-repeat center center;
     background-size: cover;
+    height: 100vh;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.icons img {
+    max-width: 50px;
+    margin-bottom: 1rem;
+}
+
+.content-section img {
+    width: 100%;
+    margin: 0;
+    height: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.latest-articles img {
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.btn-success {
+    background-color: #4CAF50;
+    border: none;
+    padding: 20px;
+    border-radius: 0;
+
+}
+
+.btn-success:hover {
+    background-color: #45a049;
 }
